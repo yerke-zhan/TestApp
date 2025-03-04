@@ -1,3 +1,2 @@
-ul{
-   
-}
+@import url('./style/header.css');
+@import url('./style/profile-card.css');

@@ -14,7 +14,10 @@
 }
 .profile-card:hover{
   transform: translateY(-10px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 15px rgba(0,0,3,4.3);
+  
+  color: black;
+
 }
 
 .name{

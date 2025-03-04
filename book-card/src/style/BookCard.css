@@ -1,0 +1,35 @@
+section{
+    display: flex;
+    gap: 20px;
+}
+
+.book-card{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(244, 164, 44, 0.947);
+    padding: 20px 20px;
+    border-radius: 20px;
+    margin: 50px auto;
+    box-shadow: 10px 5px 5px black;
+}
+
+.book-card img{
+    border-radius: 50%;
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+   border: solid 2px;
+
+}
+section :hover{
+    transform: translateY(-2px);
+   
+    color: black;
+    background-color: bisque;
+    
+    
+}

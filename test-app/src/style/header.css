@@ -1,0 +1,19 @@
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: rgb(9, 151, 233);
+    color: white;
+  }
+  ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }

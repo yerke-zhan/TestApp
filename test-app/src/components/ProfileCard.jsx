@@ -1,16 +1,13 @@
 import React from "react";
-import "./ProfileCard.css";
-
-
-const ProfileCard = () =>{
+export default function ProfileCard(props){
+    console.log(props);
+    
     return(
-        <div className = "profile-card">
-            <h2 className="name">Yerkezhan</h2>
-            <p className="profession"> Frontend developer</p>
-            <p className="city">Almaty</p>
+        <div className="profile-card">
+            <img src={props.img} alt="" />
+            <h2>{props.name}</h2>
+            <p>{props.bio}</p>
+
         </div>
-
-    );
-};
-
-export default ProfileCard;
+    )
+}
