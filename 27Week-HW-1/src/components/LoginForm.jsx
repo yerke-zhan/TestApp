@@ -5,7 +5,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
 
   return (
-    <div className='use-state'>
+    <div className='login'>
       {!isLoggedIn ? (
         <div >
           <h2 >Жүйеге кіру қажет</h2>
@@ -18,7 +18,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
             <button onClick={() => setShowRegister(true)}>Register</button>
           )}
           {showRegister && (<div ><input type="text"placeholder="Email/Телефон"/>
-            <input  type="password"
+            <input type="password"
                 placeholder="Құпия сөз"/><button onClick={() => setShowRegister(false)}>Register</button>
             </div>
           )}
