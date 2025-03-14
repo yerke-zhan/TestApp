@@ -10,27 +10,27 @@ export default function LoginForm() {
         <div>
           <h2>Жүйеге кіру қажет</h2>
 
-          {/* Hide login button when showRegister is true */}
+          
           {!showRegister && (
-            <button onClick={() => setIsLoggedIn(true)}>Login</button>
+            <button onClick={() => setIsLoggedIn(true)}>Кіру</button>
           )}
 
           <br /><br />
 
           {!showRegister ? (
-            <button onClick={() => setShowRegister(true)}>Register</button>
+            <button onClick={() => setShowRegister(true)}>Тіркелу</button>
           ) : (
             <div>
               <input type="text" placeholder="Email/Телефон" />
               <input type="password" placeholder="Құпия сөз" />
-              <button onClick={() => setShowRegister(false)}>Register</button>
+              <button onClick={() => setShowRegister(false)}>Тіркелу</button>
             </div>
           )}
         </div>
       ) : (
         <div>
           <h2>Бастапқы бетке қош келдіңіз</h2>
-          <button onClick={() => setIsLoggedIn(false)}>Log out</button>
+          <button onClick={() => setIsLoggedIn(false)}>Шығу</button>
         </div>
       )}
     </div>
