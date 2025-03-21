@@ -15,8 +15,9 @@ export default function Project() {
 
     <div>
         <h1>My Projects</h1>
+        <h4> Here are some of my projects: </h4>
 <ul> 
-        <li>Weather App
+        <li>  <a href="https://yerke-zhan.github.io/WeatherAppFinal/"> Weather App </a>
         <button onClick={() => setText(!text)}>
         
         {text? "Back": "more..."}
@@ -24,7 +25,7 @@ export default function Project() {
     </button></li> 
     {text && <p>Weather App- қосымшасы ауа райын көруге арналған.Кез келген қаланың атын енгізіңіз. </p>}
             
-            <li>Recipe App 
+            <li><a href="https://yerke-zhan.github.io/Recipe2/"> RecipeApp  </a>
             <button onClick={() => setText2(!text2)}>
         
         {text2? " Back": "more..."}
@@ -32,7 +33,7 @@ export default function Project() {
     </button></li>
     {text2 && <p>Recipe App- қосымшасы арқылы менюге қатысты барлық ақпаратты аласыз. Жаңа ресепт жазуға болады. </p>}
            
-           <li>New Year Page
+           <li><a href="https://yerke-zhan.github.io/NewYearProjesi/"> New Year Page </a>
             
             <button onClick={() => setText3(!text3)}>
         
@@ -43,6 +44,11 @@ export default function Project() {
     </ul>
 
       <button onClick={()=>navigate('/about')}>About Me</button>
+     
+
+    
     </div>
+
+
   )
 }
